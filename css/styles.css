@@ -1,0 +1,52 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+.container{
+    background-color: antiquewhite;
+    margin: 6rem auto;
+    width: 70%;
+    position: relative;
+    z-index: 2;
+    padding: 3% 0 5% 6%;
+}
+
+.form-header{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form-body{
+    background-color: yellowgreen;
+    margin-top: 0rem;
+}
+
+.static-header{
+    background-color: yellow;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1% 4% 10% 0.5%;
+}
+
+.container div{
+    margin: 1rem;
+}
+
+input [text]{
+    display: block;
+}
+
+.description{
+    width: 80%;
+    display: block;
+}

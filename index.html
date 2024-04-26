@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripto/scripto.js"></script>
+</head>
+<body>
+    <div class="static-header">
+        <h1>Anuncie seus serviços</h1>
+    </div>
+    <div class="container">   
+        <div class="form-header">
+            <h2>Preencha suas informações:</h2>
+            <p>Descreva a si e ao seu trabalho.</p>
+        </div>
+     <div class="form-body">
+        <div class="form-container">
+            
+                       <!-- Input nome, sobrenome, idade e telefone -->
+                    <div class="box-input">
+                        <label for="username">Nome:</label>
+                        <input class="bloco" id="username" type="text" name="username" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="box-input">
+                        <label for="surname">Sobrenome:</label>
+                        <input class="bloco" id="surname" 
+                        type="text" name="surname" 
+                        placeholder="Digite seu sobrenome">
+                    </div>
+
+                    <div class="box-input">
+                        <label for="age">Idade:</label>
+                        <input class="bloco" id="age" 
+                        type="number"
+                        name="age" placeholder="Informe sua Idade" >
+                    </div>
+
+                    <div class="box-input">
+                        <label for="cellphone">Telefone:</label>
+                        <input class="bloco" id="cellphone" 
+                        type="phone" minlength="2" maxlength="11" 
+                        name="cellphone" placeholder="Digite seu telefone de contato" >
+                    </div>
+                    <!-- Input radio -->
+                    <div>
+                        <p>Seu gênero:</p>
+                        <input type="radio" id="masculine" value="masculine" name="fodase">
+                        <label for="masculine">Masculino</label>
+                        
+                        <input type="radio" id="feminine" value="feminine" name="fodase">
+                        <label for="feminine">Feminino</label>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="service">Seu trabalho:
+                        <textarea name="service" id="service" class="description"
+                        placeholder="Fale sobre o que você faz, citando experiência e tudo que achar relevante"></textarea>
+                        </label>
+                    </div>
+                    <!-- Input Modalidade -->
+                    <div class="options">
+                        <p>Você tem disponibilidade para trabalhar nas modalidades:</p>
+                        <ul class="list">
+                            <li>
+                                <input type="checkbox" 
+                                name="modalidades[]" 
+                                value="Presencial"
+                                id="presential">
+                                <label for="presential">Presencial</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" 
+                                name="modalidades[]" 
+                                value="hibrid"
+                                id="hibrid">
+                                <label for="hibrid">Híbrido</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" 
+                                name="modalidades[]" 
+                                value="Home"
+                                id="home">
+                                <label for="home">Home-Office</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Input formas de pagamento -->
+                    <div class="options">
+                        <ul>
+                            <p>Quais formas de pagamento você aceita?</p>
+                            <li>
+                                <input type="checkbox" 
+                                value="cash" 
+                                id="cash">
+                                <label for="cash">Dinheiro</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" 
+                                value="credit" 
+                                id="credit">
+                                <label for="credit">Cartão de Crédito</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" 
+                                value="debit"  
+                                id="debit">
+                                <label for="debit">Cartão de Débito</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" 
+                                value="xere" 
+                                id="xere">
+                                <label for="xere">Xerecard</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" 
+                                value="permut" 
+                                id="permut">
+                                <label for="permut">Permuta</label>
+                            </li>
+                        </ul>
+                    </div>
+         </div>
+        </div>
+        <input type="submit" class="enviar" value="Enviar">
+    </div>
+<!-- Comi quem ta lendo -->
+</body>
+</html>

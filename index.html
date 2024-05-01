@@ -17,8 +17,6 @@
             <p>Descreva a si e ao seu trabalho.</p>
         </div>
      <div class="form-body">
-        <div class="form-container">
-            
                        <!-- Input nome, sobrenome, idade e telefone -->
                     <div class="box-input">
                         <label for="username">Nome:</label>
@@ -41,7 +39,7 @@
 
                     <div class="box-input">
                         <label for="cellphone">Telefone:</label>
-                        <input class="bloco" id="cellphone" 
+                        <input class="bloco" id="cellphone" onkeydown="phoneNumber()"
                         type="phone" minlength="2" maxlength="11" 
                         name="cellphone" placeholder="Digite seu telefone de contato" >
                     </div>
@@ -131,8 +129,8 @@
                         </ul>
                     </div>
          </div>
+         <input type="submit" class="enviar" value="Enviar">
         </div>
-        <input type="submit" class="enviar" value="Enviar">
     </div>
 <!-- Comi quem ta lendo -->
 </body>
